@@ -7,79 +7,16 @@ This is the remote application for the wall project. It is designed to be used a
 -   Node.js (>= 20.x)
 -   pnpm (>= 9.x)
 
-## Environment Setup
+## Running the Application in docker
 
-**Create environment files for development and production:**
-
-`.env.development`
-
-```
-NODE_ENV=development
-PORT=5000
-REMOTE_BASE_URL=http://localhost
-```
-
-`.env.production`
-
-```
-NODE_ENV=production
-PORT=4000
-REMOTE_BASE_URL=http://localhost
-```
-
-## Running the Application
-
-**Development Mode**
-
-To run the application in development mode:
-
-`pnpm start`
-
-This will start the Webpack development server on the port specified in `.env.development`.
-
-**Production Mode**
-
-To build and serve the application in production mode:
-
-**Build the application:**
-
-`pnpm build`
-
-**Serve the build files:**
-
-`pnpm build:start`
-
-This will serve the build files on the port specified in .env.production.
-
-## Consuming the Remote App
-
-To consume this remote app in a host application, ensure that the host application's Webpack configuration points to the correct URL for the remote application's `remoteEntry.js`.
-
-Example configuration in the host application's Webpack config:
-
-```
-new ModuleFederationPlugin({
-    name: 'hostApp',
-    remotes: {
-        offerwall: 'offerwall@http://localhost:5000/remoteEntry.js',
-    },
-    shared: {
-        react: {
-            singleton: true,
-            requiredVersion: deps.react,
-        },
-        'react-dom': {
-            singleton: true,
-            requiredVersion: deps['react-dom'],
-        },
-    },
-}),
 ```
 ## Running the Application
 docker-compose up -d --build
 
+visit: http://localhost:4000/campaign/new
 
-# ui-issues-beforeFix
+
+# ui-issues-after-Fix
 
 This is a demo project to show common UI issues which we will be checking in real projects.
 Feedback on Campaign
@@ -117,11 +54,11 @@ Feedback on Campaign after fix
 15. After form clears on "save changes" button, focus/cursor should be on Account to allow continuous fillup. [Known Issue and will not be addressed in this release.]
 
 
-check responsiveness
+checked responsiveness
 
-and check navigation
+and checked navigation
 
-and check with accessibility point of view
+and checked with accessibility point of view
 
 and finally security 
 
