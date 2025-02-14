@@ -23,8 +23,8 @@ visit: http://localhost:4000/campaign/new
 This is a demo project to show common UI issues which we will be checking in real projects.
 Feedback on Campaign
 
-Feedback on Campaign after fix
-
+## Feedback on Campaign after fix
+```
 1. Crash on country field when all the selectable is empty. [Fixed]
 
 2. Add asterisk (*) -> red marked on the mandatory fields. [Fixed]
@@ -66,6 +66,6 @@ and finally security
 
 and performance point of view.
 
-Overall looks clean and we need to further check after integrating with the whole project. 
+Overall looks clean and we need to further check after integrating with the whole project.
 
 ```
