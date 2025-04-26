@@ -21,7 +21,43 @@ visit: http://localhost:4000/campaign/new
 ```
 
 This is a demo project to show common UI issues which we will be checking in real projects.
-Feedback on Campaign
+
+## Before starting test do the background study
+```
+
+
+-> Read and understand the Requirement
+
+-> See the design document 
+
+-> Try to think from end user's point of view.
+
+Start the test
+
+-> testcase
+
+Checking if the application/software has any grammatical or spelling mistakes.
+
+Checking if the design is as per design document.
+
+Checking for the default values.
+
+Checking for website's title and favicon.
+
+Checking for mandatory field in the form.
+
+Checking for professional placeholders name.
+
+Checking for negative amount at BID data field
+
+Checking for front end validation at all the fields. 
+
+Checking all the field is working as per expectations. (radio , dropdown, list, checkbox...)
+
+Checking for confirmation message.
+
+```
+
 
 ## Feedback on Campaign after fix
 ```
